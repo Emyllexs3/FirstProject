@@ -1,0 +1,13 @@
+{
+
+// Body - Tudo que vai aparecer na web precisa estar dentro do web. 
+
+    // quebra de linha para nao gerar barra de rolagem
+    "editor.wordWrap": "on", 
+    "files.autoSave": "afterDelay", // salvamento automatico 
+    /* SHIFT + ALT + A - para comentario em linhas */
+    "files.autoSaveDelay": 100, // em milisegundos 
+    "editor.formatOnSave" : true // ativa formatação automatica 
+    // ALT + SHIFT + F = ELE VAI FAZER A IDENTAÇAO
+}
+ 
