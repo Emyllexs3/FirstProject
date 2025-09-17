@@ -1,0 +1,26 @@
+/* Reset CSS */
+* {
+    margin: 0; /*Margem externa */
+    padding: 0; /* Espaço */
+    box-sizing: border-box ; /* TAMANHO DA CAIXA. ELE PEGA O 100% DA TELA PARA EVITAR BARRA DE ROLAGEM */
+}
+
+
+body {
+    background: #747272;
+    /* texto */
+    /* em bloco */
+header {
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    /* alinhamento vertical */
+    align-items: center;
+    width: 100%;
+    padding: .5rem 1rem; /* espaçamento entre o elemento interno e o conteudo */
+    border-bottom: 1px solid black;
+}
+    
+
+}
+

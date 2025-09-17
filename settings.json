@@ -1,0 +1,26 @@
+{
+    // PX - Unidade absoluta e fixas - para margem 
+    // REM - Unidades relativas e ele se adapta pára dispositivos diferentes 
+    // Figma é a logo 
+    // O aspas é a raiz da pasta
+// <I> - Pra icone e deixar em italico 
+// DIV - Divisão 
+// LI - de lista
+// OL - Lista ordenada // ele numera
+// UL- Lista nao ordenada
+// A HREF = " " - Ele transforma tudo em link 
+// NAV - navegação 
+// HEADER - Barra de cabeçalho - tudo que ficar no topo, é dentro dessa header   
+// HEAD - Cerebro do html, ela vai criar as conexões com o nosso html, serve pra juntar com outras ferramentas 
+// Body - Tudo que vai aparecer na web precisa estar dentro do body. 
+ // SHIFT + ALT + A - Comenta algo em bloco
+// ALT + SHIFT + F = ELE VAI FAZER A IDENTAÇAO
+ // quebra de linha para nao gerar barra de rolagem
+ // semantica = significado 
+    "editor.wordWrap": "on", 
+    "files.autoSave": "afterDelay", // salvamento automatico 
+    /* SHIFT + ALT + A - para comentario em linhas */
+    "files.autoSaveDelay": 100, // em milisegundos 
+    "editor.formatOnSave" : true // ativa formatação automatica 
+}
+ 
