@@ -1,8 +1,10 @@
 {
+    // MATERIA ICON - Extensão 
     // PX - Unidade absoluta e fixas - para margem 
     // REM - Unidades relativas e ele se adapta pára dispositivos diferentes 
     // Figma é a logo 
     // O aspas é a raiz da pasta
+    // H1 - Texto Titulo 
 // <I> - Pra icone e deixar em italico 
 // DIV - Divisão 
 // LI - de lista
@@ -11,6 +13,9 @@
 // A HREF = " " - Ele transforma tudo em link 
 // NAV - navegação 
 // HEADER - Barra de cabeçalho - tudo que ficar no topo, é dentro dessa header   
+// MAIN - O Principal 
+// FOOTER - A barra final - 
+// DIV - Containers de divisão, Permite agrupar diferentes conteudos 
 // HEAD - Cerebro do html, ela vai criar as conexões com o nosso html, serve pra juntar com outras ferramentas 
 // Body - Tudo que vai aparecer na web precisa estar dentro do body. 
  // SHIFT + ALT + A - Comenta algo em bloco

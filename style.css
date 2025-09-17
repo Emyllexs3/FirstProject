@@ -13,14 +13,19 @@ body {
 header {
     /* Flexbox */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Eixo X */
     /* alinhamento vertical */
-    align-items: center;
-    width: 100%;
+    align-items: center; /* Eixo Y */
+    width: 100%; /* Largura total para todos os dispositivos  */
     padding: .5rem 1rem; /* espaçamento entre o elemento interno e o conteudo */
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid black; /*  Ele cria uma linha no final da header */
+    position: fixed; /* Ele vai fixar o menu, vai acompanhar o scroll do site */
 }
     
+h1 {
+    padding-top: 1200px;
+
+}
 
 }
 
