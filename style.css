@@ -8,6 +8,7 @@
 
 body {
     background: #747272;
+}
     /* texto */
     /* em bloco */
 header {
@@ -22,10 +23,25 @@ header {
     position: fixed; /* Ele vai fixar o menu, vai acompanhar o scroll do site */
 }
     
-h1 {
-    padding-top: 1200px;
-
+/* NAV */
+.menu-desktop {
+    display: none;
 }
 
+/*  UL */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
 }
 
+.text-link {
+    text-decoration: none;
+}
+
+/* A partir de 768 */
+@media(min-width: 768px) {
+    .menu-desktop {
+        display: flex;
+    }
+}

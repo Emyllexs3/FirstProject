@@ -5,6 +5,8 @@
     // Figma é a logo 
     // O aspas é a raiz da pasta
     // H1 - Texto Titulo 
+    // Tudo que for classe, se separa com hífen e letra minuscula 
+    // MAIOR QUE 738PX. ABRE CHAVE PARA MOBILE 
 // <I> - Pra icone e deixar em italico 
 // DIV - Divisão 
 // LI - de lista
