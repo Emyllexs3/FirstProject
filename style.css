@@ -1,3 +1,26 @@
+/* Cor DARK */
+:root,
+:root[data-theme='dark'] {
+
+    --cor-fundo: black;
+    --fundo-secundario: white
+    --txt-menu-text: white ;
+    --borda: white;
+    --icon-theme:orange ;
+    
+}
+
+
+/* Cor LIGHT */
+:root[data-theme='light'] {
+
+    --cor-fundo: white ;
+     --fundo-secundario: rgb(114, 106, 106);
+    --txt-menu-text: black;
+    --borda: black;
+    --icon-theme: black;
+}
+
 /* Reset CSS */
 * {
     margin: 0; /*Margem externa */
@@ -7,7 +30,7 @@
 
 
 body {
-    background: #747272;
+    background: var(--cor-fundo);
 }
     /* texto */
     /* em bloco */
@@ -21,6 +44,8 @@ header {
     padding: .5rem 1rem; /* espaçamento entre o elemento interno e o conteudo */
     border-bottom: 1px solid black; /*  Ele cria uma linha no final da header */
     position: fixed; /* Ele vai fixar o menu, vai acompanhar o scroll do site */
+    z-index: 9999; /* Ele faz camadas. sobrepoe */
+    background: var(--cor-fundo);
 }
     
 /* NAV */
@@ -34,10 +59,37 @@ header {
     list-style: none;
     gap: 1.2rem;
 }
-
-.text-link {
+.menu-link {
     text-decoration: none;
+
 }
+.menu-text {
+    text-transform: uppercase;
+    color: var(--txt-menu-text);
+}
+
+#toggleTheme {
+    color: var(--icon-theme)
+    
+}
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX();
+    background: var(--fundo-secundario);
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    padding-top: 4rem;
+    height: 100vh;
+    border-left: 1px solid var(--borda);
+
+}
+
+
 
 /* A partir de 768 */
 @media(min-width: 768px) {

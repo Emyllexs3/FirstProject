@@ -1,4 +1,5 @@
 {
+    // Sempre que for conectar atributo ele tem que ficar dentro de colchetes 
     // MATERIA ICON - Extensão 
     // PX - Unidade absoluta e fixas - para margem 
     // REM - Unidades relativas e ele se adapta pára dispositivos diferentes 
