@@ -1,116 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
-  <head> 
+  <!-- Idioma -->
+  <head>
     <meta charset="UTF-8" />
+    <!-- escala da tela -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- title = Titulo da pagina -->
-    <title>Portfólio - Garcia</title>
+    <!-- Titulo da Pagina -->
+    <title>Feriani - Portfolio</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- https://icons.getbootstrap.com/#install -->
   </head>
   <body>
     <header>
+      <!-- MENU DESKTOP -->
       <nav class="menu-desktop">
-        <ul class="menu menu-principal"> 
-
+        <ul class="menu menu-principal">
           <li>
-             <a href="#home" class="menu-link active">  
-              <span class="menu-text">
-              home
-            </span>
-            </a>
-          </li>
-
-           <li>
-            <a href="#projetos" class="menu-link">  
-              <span class="menu-text">
-              projetos 
-            </span>
+            <a href="#home" class="menu-link active">
+              <span class="menu-text"> HOME </span>
             </a>
           </li>
           <li>
-            <a href="" class="menu-link"> 
-              <span class="menu-text">
-              contato
-            </span>
+            <a href="#projetos" class="menu-link">
+              <span class="menu-text"> Projetos </span>
             </a>
           </li>
           <li>
-            <a href="" class="menu-link"> 
-              <span class="menu-text">
-              suporte
-            </span>
+            <a href="" class="menu-link">
+              <span class="menu-text"> SOBRE </span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="menu-link">
+              <span class="menu-text"> CONTATO </span>
             </a>
           </li>
         </ul>
-
-      </nav> 
+      </nav>
 
       <!-- LOGO -->
-       <div>
+      <div>
         <a href="#home">
           <img src="logo.png" />
         </a>
-       </div>
-        <!-- TROCAR COR TEMA -->
-        <div class="header-toggle">
-           <!-- ICONE -->
-            <i class="bi bi-sun" id="toggleTheme"></i>
-
-          <button id="menuHamburger" class="btn-menu-mobile"> <!-- BOTÃO LISTA MOBILE // MENU HAMBURGUER  -->
-          
-            <i class="bi bi-list"></i>
-
-          </button>
-
-        </div>
       </div>
-    
+
+      <!-- ICONE COR TEMA -->
+      <div class="header-toggle">
+        <i class="bi bi-sun" id="toggleTheme"></i>
+
+        <button id="menuHamburger" class="btn-menu-mobile">
+          <!-- BOTAO LISTA MOBILE -->
+          <i class="bi bi-list"></i>
+          <!-- MENU HAMBURGER-->
+        </button>
+      </div>
     </header>
 
-      <!-- MENU LISTA MOBILE -->
-       <nav id="menuMobile" class="menu menu-mobile">
-       <ul class="menu-list"> 
-          <li class="menu-item">
-            <a href="#home" class="menu-link active"> 
-              <span class="menu-text">
-              home
-            </span>
-            </a>
-          </li>
-           <li class="menu-item">
-            <a href="#projetos" class="menu-link"> 
-              <span class="menu-text">
-              projetos 
-            </span>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-link"> 
-              <span class="menu-text">
-              contato
-            </span>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-link"> 
-              <span class="menu-text">
-              suporte
-            </span>
-            </a>
-          </li>
-        </ul>
-       </nav>
-      <!-- Projetos  -->
-       <section id="projetos">
-        PROJETOS
-       </section>
+
+    <!-- MENU LISTA MOBILE -->
+    <nav id="menuMobile" class="menu menu-mobile">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="#home" class="menu-link active">
+            <span class="menu-text"> HOME </span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#projetos" class="menu-link">
+            <span class="menu-text"> Projetos </span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="" class="menu-link">
+            <span class="menu-text"> SOBRE </span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="" class="menu-link">
+            <span class="menu-text"> CONTATO </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
 
+    <main id="home">
+
+     <!-- Carrossel Boostrap // Slides/Banner -->
+      <section id="carousellBoostrap">
+      </section>
+
+      <!-- Slogan -->
+      <div class="main-content">
+        <h1>
+            homem aranha ok
+        </h1>
+        <p>
+            Emy Garcia, São Paulo - SP, estudande de TI 
+        </p>
+      </div>
+
+
+    </main>
+    
+    <!-- SERVIÇOS -->
+    <section id="projetos" class="projetos">
+      projetos
+    </section>
+
+    <section id="sobre" class="sobre">
+        sobre
+    </section>
+
+    <section id="contato" class="contato">
+        contato 
+    </section>
+
+    <footer>
+        <p> &copy;2025 </p>
+    </footer>
 
     <!-- JS -->
-     <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
+
+<!-- ALT + SHIFT + A = Comentario -->
+<!-- ALT + SHIFT + F = Identação -->
+<!-- Shift + ! = Iniciar html -->

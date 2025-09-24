@@ -1,156 +1,166 @@
-/* Cor DARK */
+
+/* Color -> Dark */
 :root,
-:root[data-theme='dark'] {
-
-    --cor-fundo: rgb(109, 105, 105);
-    --fundo-secundario: rgb(179, 179, 179);
-    --txt-menu-text: white;
-    --borda: white;
-    --icon-theme:orange ;
-    
+:root[data-theme="dark"] {
+  --cor-fundo: #141414;
+  --cor-fundo-secundario:#aaaaaa;
+  --cor-text-menu-link: #ffffff;
+  --cor-border-botton: #ffffff;
+  --cor-icon-theme: #ffffff;
+  --cor-titulo: white;
+  --cor-textos: white;
 }
 
-
-/* Cor LIGHT */
-:root[data-theme='light'] {
-
-    --cor-fundo: rgb(219, 215, 215) ;
-     --fundo-secundario: rgb(136, 135, 135);
-    --txt-menu-text: black;
-    --borda: black;
-    --icon-theme: black;
+/* Color -> Ligth */
+:root,
+:root[data-theme="ligth"] {
+  --cor-fundo: #cacaca;
+  --cor-fundo-secundario:#eeeeee;
+  --cor-text-menu-link: #000000;
+  --cor-borda: #000000;
+  --cor-icon-theme: #000000;
+  --cor-titulo: black;
+  --cor-textos: black;
 }
+
+/* Aparencia/Efeito barra de rolagem */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--cor-fundo-secundario)transparent;
+
+}
+
 
 /* Reset CSS */
 * {
-    margin: 0; /*Margem externa */
-    padding: 0; /* Espaço */
-    box-sizing: border-box ; /* TAMANHO DA CAIXA. ELE PEGA O 100% DA TELA PARA EVITAR BARRA DE ROLAGEM */
+  margin: 0; /* Margem Externa */
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 body {
-    background: var(--cor-fundo);
+  background: var(--cor-fundo);
 }
 
-    /* texto */
-    /* em bloco */
 header {
-    /* Flexbox */
-    display: flex;
-    justify-content: space-between; /* Eixo X */
-    /* alinhamento vertical */
-    align-items: center; /* Eixo Y */
-    width: 100%; /* Largura total para todos os dispositivos  */
-    padding: .5rem 1rem; /* espaçamento entre o elemento interno e o conteudo */
-    border-bottom: 1px solid black; /*  Ele cria uma linha no final da header */
-    position: fixed; /* Ele vai fixar o menu, vai acompanhar o scroll do site */
-    z-index: 9999; /* Ele faz camadas. sobrepoe */
-    background: var(--cor-fundo);
+  /* FLEXBOX */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem; /* 1 rem = 16 pixels */
+  border-bottom: 0.1px solid var(--cor-borda);
+  position: fixed;
+  z-index: 9999; /* CAMADAS */
+  background: var(--cor-fundo);
 }
-    
-/* NAV */
+
+/* nav */
 .menu-desktop {
-    display: none;
+  display: none;
 }
 
-/*  UL */
+/* ul */
 .menu {
-    display: flex;
-    list-style: none;
-    gap: 1.2rem;
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
 }
-.menu-link {
-    text-decoration: none;
 
+/* a */
+.menu-link {
+  text-decoration: none;
 }
+
 .menu-text {
-    text-transform: uppercase;
-    color: var(--txt-menu-text);
+  text-transform: uppercase;
+  color: var(--cor-text-menu-link);
 }
 
 #toggleTheme {
-  color: var(--icon-theme);
-  font-size: 16px;
+  color: var(--cor-icon-theme);
+  font-size: 1.5rem;
   cursor: pointer; /* seta-mouse */
-    
 }
 
 .menu-mobile {
-    position: fixed;
-    top: 0;
-    right: 0;
-    transform: translateX(100%);
-    background: var(--fundo-secundario);
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    max-width: 320px;
-    padding-top: 4rem;
-    height: 100vh;
-    border-left: 1px solid var(--borda);
-    align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  background: var(--cor-fundo-secundario);
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  padding-top: 4rem;
+  height: 100vh; /* Viewport Height */
+  border-left: 1px solid var(--cor-borda);
+  align-items: center;
 }
-
 
 .menu-mobile.active {
-    transform: translateX(0%);
+  transform: translateX(0);
 }
 
-
-
-/* UL DA NAV MOBILE  */
 .menu-list {
-    display:flex;
-    flex-direction: column;
-    gap: 1rem;
-    list-style: none;
-
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
 }
 
 .btn-menu-mobile {
-    background: transparent;
-    border: none;
-    color: var(--icon-theme);
-    font-size: 16px;
-    margin-left: 1rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: .5rem ;
+  background: transparent;
+  border: none;
+  color: var(--cor-icon-theme);
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0.5rem;
 }
 
-.header-toaggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.header-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-item {
-    text-align: center;
+  text-align: center;
 }
 
 /* Herança */
 .menu-link.active .menu-text,
 .menu-link:hover .menu-text {
-    color: rgb(82, 53, 53);
+  color: red;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--cor-titulo);
+
+p {
+  color: var(--cor-textos);
+}
 }
 
 section {
-    padding-top: 150px;
-    color: #fff;
+  padding-top: 300px;
+  color: #fff;
 }
 
-
-/* A partir de 768 */
-@media(min-width: 768px) {
-    .menu-desktop {
-        display: flex;
-    }
-
-    .btn-menu-mobile {
-        display: none; /* Em telas menu hamburguer some */
-    
-    }
+/* Responsividade */
+/* A partir de 768 voltar tela em flex */
+@media (min-width: 768px) {
+  .menu-desktop {
+    display: flex;
+  }
+  .btn-menu-mobile {
+    display: none;
+  }
 }
