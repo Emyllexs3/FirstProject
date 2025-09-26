@@ -2,35 +2,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Libertinus+Serif+Display&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* 
-font-family: "Zalando Sans Expanded", sans-serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal;
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
 
  */
+
+:root {
+  --fonte-titulo-h1: "Zalando Sans Expanded", sans-serif;
+  --fonte-texto:  
+  --fonte-subtitulo-h2:
+  --fonte-subtitulo-h3:
+
+}
 
 /* Color -> Dark */
 :root,
 :root[data-theme="dark"] {
-  --cor-fundo: #635d5d;
+  --cor-fundo: #1f1f1f;
   --cor-fundo-secundario:gray;
   --cor-text-menu-link: white;
   --cor-border-botton: white;
   --cor-icon-theme: rgb(212, 210, 207);
   --cor-titulo: white;
   --cor-textos: white;
+  --hover-link: #747474;
+  --cor--link: #a3a2a2;
 }
 
 /* Color -> Ligth */
 :root,
 :root[data-theme="ligth"] {
-  --cor-fundo: rgb(202, 202, 202);
+  --cor-fundo: rgb(218, 218, 218);
   --cor-fundo-secundario: white;
   --cor-text-menu-link: black;
   --cor-borda: black;
   --cor-icon-theme: black;
   --cor-titulo: black;
   --cor-textos: black;
+  --hover-link: #919191;
+  --cor-link: #a3a2a2;
+
 }
 
 /* Aparencia/Efeito barra de rolagem */
@@ -86,12 +112,17 @@ header {
 .menu-text {
   text-transform: uppercase;
   color: var(--cor-text-menu-link);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+/* Icone Puro */
 #toggleTheme {
   color: var(--cor-icon-theme);
   font-size: 1.5rem;
   cursor: pointer; /* seta-mouse */
+}
+
+#toggleTheme:hover {
+  color: red;
 }
 
 .menu-mobile {
@@ -146,7 +177,7 @@ header {
 /* Herança */
 .menu-link.active .menu-text,
 .menu-link:hover .menu-text {
-  color: red;
+  color: var(--hover-link);
 }
 
 /* H1 Base/serve para todos os dispositivos */
@@ -180,8 +211,11 @@ p {
 
 /* herança */
 .menu-social i {
-  color:var(--cor-icon-theme);
+  color:var(--cor-text-menu-link);
   font-size: 1.5rem;
+}
+.menu-social i:hover {
+  color: var(--hover-link)
 }
 
 /* Responsividade */
