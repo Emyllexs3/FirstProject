@@ -59,6 +59,10 @@
 
 }
 
+html [data-theme="light"] .logo{
+  filter: invert(1);
+}
+
 /* Aparencia/Efeito barra de rolagem */
 html {
   scroll-behavior: smooth;
@@ -66,7 +70,6 @@ html {
   scrollbar-color: var(--cor-fundo-secundario)transparent;
 
 }
-
 
 /* Reset CSS */
 * {
@@ -91,6 +94,12 @@ header {
   z-index: 9999; /* CAMADAS */
   background: var(--cor-fundo);
 }
+
+.logo {
+  width:  2rem; /* Comprimento */
+/*   height:  ;  *//* Altura */
+}
+
 
 /* nav */
 .menu-desktop {
@@ -185,8 +194,8 @@ h1 {
   font-size: 2.5rem;
   color: var(--cor-titulo);
   font-family: "Zalando Sans Expanded", sans-serif;
-
 }
+
 
 p {
   color: var(--cor-textos);
@@ -231,6 +240,10 @@ p {
 
   h1 {
     font-size: 5rem;
+  }
+
+  .header-logo {
+    min-width: 30%;
   }
 }
 /* TELAS 992 */
