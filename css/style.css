@@ -24,8 +24,8 @@
 
 :root {
   --fonte-titulo-h1: "Zalando Sans Expanded", sans-serif;
-  --fonte-texto:  
-  --fonte-subtitulo-h2:
+  --fonte-texto: "libre Baskerville", serif;
+  --fonte-subtitulo-h2: "libre Baskerville", serif;
   --fonte-subtitulo-h3:
 
 }
@@ -145,7 +145,7 @@ header {
   display: flex;
   flex-direction: column;
   max-width: 320px;
-  padding-top: 4rem;
+  padding-top: 6rem;
   height: 100vh; /* Viewport Height */
   border-left: 1px solid var(--cor-borda);
   align-items: center;
@@ -197,6 +197,12 @@ h1 {
   font-family: "Zalando Sans Expanded", sans-serif;
 }
 
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--fonte-subtitulo-h2);
+}
+
 
 p {
   color: var(--cor-textos);
@@ -211,6 +217,7 @@ p {
 #home {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .main-content {
@@ -228,9 +235,45 @@ p {
   color: var(--hover-link)
 }
 
+/* Projetos */
+.projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.projeto-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.projeto-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-body {
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 1rem;
+}
+
+.card-list {
+  list-style: none;
+}
+
+
 /* Responsividade */
 /* A partir de 768 voltar tela em flex */
 @media (min-width: 768px) {
+  header {
+    padding: 1rem 6rem;
+  }
   .menu-desktop {
     display: flex;
   }
@@ -246,11 +289,54 @@ p {
   .header-logo {
     min-width: 30%;
   }
+
+  .descricao-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    align-items: center ;
+    gap: 1.25rem;
+    padding: 6.25rem 1rem;
+    background: #626262;
+    margin-top: -5.5rem;     
+  }
+
+  .video iframe {
+    aspect-ratio: 16/9;
+  }
+
+  .descricao-video h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 6.25rem 6rem 2rem 6rem;
+  }
 }
 /* TELAS 992 */
 @media (min-width: 992px) {
   h1 {
     font-size: 6rem;
+  }
+  .projeto-card {
+    flex-direction: row ;
+  }
+
+  .img-card {
+    width: 55%;
+  }
+  .header-logo {
+    min-width: 30%;
+  }
+  #home,
+  .projetos,
+  .sobre {
+    padding: 8rem 6rem 4rem 6rem;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -258,5 +344,26 @@ p {
 @media (min-width: 1400px) {
   h1 {
     font-size: 6.5rem;
+  }
+
+  .descricao-video h2 {
+    font-size: 4rem;
+    text-align: start;
+  }
+
+  .projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .img-card {
+    width: 100%;
+    border-radius: 10re, 3rem 5rem 5rem;
+    box-shadow: 4px 7px 10px #e40303;
+    pointer-events: none;
+    object-fit: cover;
+    object-position: center;
+
   }
 }
