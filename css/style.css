@@ -341,6 +341,33 @@ li {
   color: #1d85ee;
 }
 
+
+/* Sobre */
+.sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sobre-content1,
+.sobre-content2 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ACCORDION */
+
+.accordion-body {
+  display: none;
+}
+
+.accordion-item.active .accordion-body {
+  display: flex;
+}
+
+
+
 /* Responsividade */
 /* telas Até 768px */
 @media (max-width: 768px) {
@@ -348,6 +375,7 @@ li {
     padding-top: 6rem;
   }
 }
+
 
 /* A partir de 768 voltar tela em flex */
 @media (min-width: 768px) {
@@ -396,6 +424,66 @@ li {
   h1 {
     font-size: 6rem;
   }
+
+
+
+
+.card-reverse {
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.sobre-content1,
+.sobre-content2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.sobre-avatar{
+  width: 100%;
+  border-radius: 50rem;
+}
+
+.sobre-descricao {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.sobre-icones,
+.sobre-skills {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.sobre-icones,
+.sobre-skills {
+  font-size: 1.5rem;
+}
+
+/* Context 2 */
+.sobre-content2 .col1,
+.sobre-content2 .col2 {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 2rem;
+}
+
+.sobre-content2 .col1 .formacao,
+.sobre-content2 .col1 .exp {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+}
+
+  /* Tela 1200 */
 @media (min-width: 1200px) {
   h2 {
     font-size: 4rem;
