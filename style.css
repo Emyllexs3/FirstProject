@@ -476,6 +476,57 @@ li {
   transition: all .3s ease-in-out;
 }
 
+/* Contato */
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border-top: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.contato p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contato .btn-primario {
+  gap: 1rem;
+}
+
+.contato .email {
+  color: var();
+  text-decoration:none ; /* Remove underline */
+}
+
+/* Icone redes sociais */
+.contato .menu-link span {
+  color: var(--cor-link);
+}
+
+.contato .menu-link:hover i,
+.contato .menu-link:hover span:hover {
+  color: var(--cor-textos)
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.contato-formulario,
+.contato-mapa {
+  width: 100%;
+  flex: 1 1 500px;
+}
+
+
+
 
 
 /* Responsividade */
